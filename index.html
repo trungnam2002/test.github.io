@@ -2,67 +2,340 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Web Test</title>
+<title>MY CV</title>
+<!-- link thư viện reset css trang -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+<!-- Link lấy icon  -->
+<script src="https://kit.fontawesome.com/9a900d7d78.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css"> 
 </head>
-<style>
+   <style>
+      body
+{
+ height: 3000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .nav
 {
-   display: flex; 
- 
-   background-image: linear-gradient(to right, purple, pink); /*Từ trái tới phải */
-  justify-content: space-between;
-  position: fixed;  
-  width: 100%;
-  margin-top: 0;
-}
-.nav-item
-{
-  list-style: none; /* không có dấu tròn đen ở list item */
-   display: inline-block;  /*các item hiện trên 1 dòng theo từng khối item  */
-  color: white;
-  font-size: 17px;
- text-align: center;   /* thêm cho chắc ăn */
- margin: auto 15px; /*auto là chiều dọc giữ nguyên, 10px là margin chiều ngang trái phải 10px */
-
+    width: 100%;
+    height: 35px ;
+   background-image: linear-gradient(to right,#5ad7c6,#02a18b);
+   display: flex;
+   position: fixed;
+   justify-content: space-around;
+   top:0;
+   
 }
 .nav-list
 {
- padding-left: 0px; /* lúc đầu padding của item lệch sang phải 40px nên phải padding left 0px  */
-}
-.chaomung
-{
-  font-size: 17px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
- margin-right: 120px;
-}
-body
-{
-  height: 1500px;
-}
-
-
-</style>
-
-  
-  <body>
-    <!-- Navbar -->
-    <div class="nav">
-<ul class="nav-list">
-  <li class="nav-item">Giới thiệu</li>
-  <li class="nav-item">Kết nối</li>
-  <li class="nav-item">Tải ứng dụng</li>
-</ul>
-<ul class="nav-list">
-  <li class="nav-item chaomung">Chào Mừng Đến Với Trang Của Nam</li>
-  
-</ul>
-<ul class="nav-list">
-  <li class="nav-item">Đăng kí</li>
-  <li class="nav-item dangnhap">Đăng nhập</li>
-  
-</ul>
-    </div>
+    width: 250px;
+    list-style: none;
  
-  </body>
+   padding-left: 0;
+   text-align: center;
+  margin: 9px 0;
+}
+.list-item
+{
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+
+   margin-right: 0;
+}
+
+.click:hover
+{
+opacity: 0.7;
+cursor: pointer;
+}
+strong
+{
+    user-select: none;
+}
+.cv
+{
+    width: 50%;
+    height: 1300px;
+    margin-top: 200px;
+    margin-left: 25%;
+    background-color: #efefef;
+    /* css box shadow dạng lịch */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* CSS form CV */
+.cv-info
+{
+    list-style:none;
+   padding-left: 0;
+   width: 300px;
+   
+}
+.nav
+{
+    display: flex;
+}
+/* css khung header cv */
+.cv-tieude
+{
+    height: 70px;
+    background-image: linear-gradient(to right,#67bfc3,#c7e5e7);
+    padding-left: 0;
+display: flex;
+  margin: 0 0;
+  align-items: center;
+}
+/* css khung chữ front end developer */
+.tieude
+{
+  width: 250px;
+    height: 40px;
+  margin: 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin-left: 70px;
+font-size: 25px;
+font-weight: 600;
+color: #def0f0;
+}
+.hinhanh
+{
+    width: 160px;
+    height: 170px;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-right: 60px;
+
+}
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #cbdddc;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+.khungtieude
+{
+    width: 250px;
+    background-color: #66bfc3;
+    height:25px;
+    border-top-right-radius: 100px  ;
+    border-bottom-right-radius: 100px;
+    padding-left: 10px;
+    margin-left: 20px;
+    display: block;
+    padding-top:5px;
+    font-size: 18px;
+}
+.cv-info-item
+{
+   width: 280px;
+    margin-left: 25px;
+    margin-top: 5px;
+    text-align: justify;
+}
+.flex1
+{
+    display: flex;
+  justify-content: space-between;
+  max-height: 300px;
+}
+.hocvan,.kynang,.giaithuong
+{
+    margin-right: 20px;
+}
+.muctieunghenghiep,.hocvan,.kinhnghiem,.kynang,.duan,.giaithuong,.sothich
+{
     
+    width: 330px;
+    margin-left: 20px;
+    border-radius: 30px;
+    padding-top: 20px;
+    background-color: #cbdddc;
+    padding-bottom: 15px;
+}
+.icon-dot {
+    background:black;
+    border: 100px;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    display: inline-block;
+    margin-bottom: 3px;
+  }
+
+
+   </style>
+<body>
+    <header class="nav">
+     <ul class="nav-list">
+        <li class="list-item click">
+            <i class="fa-brands fa-facebook-square"></i>
+            Facebook
+        </li>
+        <li class="list-item">
+           I
+        </li>
+        <li class="list-item click">
+            <i class="fa-brands fa-instagram-square"></i>
+            Instagram
+        </li>
+     </ul>
+     <ul class="nav-list">
+        <li class="list-item">
+            <strong>Xin Chào</strong>
+        </li>
+    </ul>
+     <ul class="nav-list">
+        <li class="list-item click">
+            <i class="fa-solid fa-language"></i>
+            Vietnamese
+        </li>
+        <li class="list-item">
+            I
+         </li>
+        <li class="list-item click">English</li>
+     </ul>
+    </header>
+ <!-- Form CV -->
+<div class="cv">
+    <!-- Form tiêu đề job -->
+            <ul class="cv-tieude">
+                   <span class="tieude"> Front-End Developer</span>               
+            </ul>          
+            <!-- class flex1 gom tt cá nhân và hình ảnh đứng ngang nhau -->
+            <div class="flex">
+            <!-- Form thông tin cá nhân -->
+            <ul class="cv-info thongtincanhan"> 
+                <nav class="khungtieude">
+                <i class="fa-solid fa-circle-info"></i>
+                    Thông tin cá nhân
+                </nav>
+                <li class="cv-info-item">
+                    <span class="icon-dot"></span> Họ và tên: Vũ Trung Nam
+                </li>
+                <li class="cv-info-item">
+                    <span class="icon-dot"></span> Giới tính: Nam
+                </li>
+                <li class="cv-info-item">
+                    <span class="icon-dot"></span> Ngày sinh: 27/10/2002
+                </li>
+                <li class="cv-info-item">
+                    <span class="icon-dot"></span> Số điện thoại: 0383717450
+                </li>
+                <li class="cv-info-item">
+                    <span class="icon-dot"></span> Địa chỉ: Bình Thạnh,Tp.HCM
+                </li>
+                <li class="cv-info-item">
+                    <span class="icon-dot"></span> Email: vutrungnam2002@gmail.com
+                </li>
+            </ul>
+<!-- Form hình thẻ-->
+            <img class="cv-info hinhanh" src="hinhnam.jpg" alt="Hình thẻ">
+        </div>
+            <!-- Form mục tiêu nghề nghiệp -->
+            <div class="flex1">
+            <ul class="cv-info muctieunghenghiep">
+                <nav class="khungtieude">
+                <i class="fa-solid fa-user-doctor"></i>
+                    Mục tiêu nghề nghiệp
+                    </nav>
+                <li class="cv-info-item">
+                        Mong muốn trở thành lập trình viên Front End, hiểu biết sâu về nhiều lĩnh vực, luôn học hỏi và phát triển bản thân để áp dụng những kỹ năng lĩnh hội vào công việc.
+                </li>
+            </ul>
+<!-- Form trình độ học vấn -->
+            <ul class="cv-info hocvan">
+                <nav class="khungtieude">
+                <i class="fa-solid fa-school"></i>
+                    Trình độ học vấn
+                    </nav>
+                <li class="cv-info-item fix">
+                    <li class="cv-info-item">
+                        <span class="icon-dot"></span> 2020-2022: Trường đại học Quốc Tế Sài Gòn
+                    </li>
+                    <li class="cv-info-item">
+                        <span class="icon-dot"></span> Điểm trung bình năm 1: 8.4
+                    </li>
+                    <li class="cv-info-item">
+                        <span class="icon-dot"></span> Điểm trung bình năm 2: 8.6
+                    </li>
+                </li>
+            </ul>
+        </div>
+
+<!-- Form kinh nghiệp làm việc -->
+<div class="flex1">
+            <ul class="cv-info kinhnghiem">
+                <nav class="khungtieude">
+                <i class="fa-solid fa-briefcase"></i>
+                Kinh nghiệm làm việc  
+                </nav> 
+                <li class="cv-info-item">
+                    Hiện tại chưa có
+                </li>
+            </ul>
+<!-- Form kỹ năng -->
+            <ul class="cv-info kynang">
+                <nav class="khungtieude">
+                <i class="fa-solid fa-hand-fist"></i>
+                Các Kỹ năng
+                </nav> 
+                <li class="cv-info-item">
+                    <span class="icon-dot"></span> C++: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                </li>
+                <li class="cv-info-item">
+                    <span class="icon-dot"></span> C#: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                </li>
+                <li class="cv-info-item">
+                    <span class="icon-dot"></span> HTML/CSS/JS: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </li>
+            </ul>
+</div>
+<!-- Form dự án tham gia -->
+<div class="flex1">
+            <ul class="cv-info duan">
+                <nav class="khungtieude">
+                <i class="fa-solid fa-people-group"></i>
+                Các dự án đã tham gia
+                </nav>
+                <li class="cv-info-item">
+                    <span class="icon-dot"></span> 03/2022: Đồ án quản lí cửa hàng thể thao sử dụng ngôn ngữ C#
+                </li>
+            </ul>
+             <!-- Form giải thưởng -->
+             <ul class="cv-info giaithuong">
+                <nav class="khungtieude">
+                <i class="fa-solid fa-trophy"></i>
+                Giải thưởng
+                </nav>
+                <li class="cv-info-item fix">
+                    <span class="icon-dot"></span> Giải khuyến khích cuộc thi Sáng tạo dành cho thanh thiếu niên nhi đồng huyện Long Thành năm 2017
+                </li>
+                <li class="cv-info-item fix">
+                    <span class="icon-dot"></span> Giải nhì cuộc thi ươm mầm tài năng SIU năm 2020
+                </li>
+                
+            </ul>
+        </div>
+<!-- Form sở thích -->
+            <ul class="cv-info duan">
+                <nav class="khungtieude">
+                <i class="fa-solid fa-futbol"></i>
+                Sở thích
+                </nav>
+                <li class="cv-info-item">
+                Đá bóng, bóng chuyền, đọc sách, xem phim...
+               
+                
+                </li>
+                
+            </ul>
+           
+</div>
+</body>
 </html>
